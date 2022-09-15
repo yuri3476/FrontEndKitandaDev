@@ -1,0 +1,130 @@
+body {
+  background: orange;
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 100vw;
+  height: 100px;
+  background: rgb(2, 107, 93);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Logo*/
+.logo {
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/*Barra de Pesquisa*/
+.search {
+  background: white;
+  padding: 15px;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.search input {
+  width: 350px;
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  color: black;
+  outline: none;
+  margin-right: 20px;
+}
+
+.search .buttonSearch {
+  background: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*Menu*/
+.menuNav {
+  display: flex;
+}
+
+.menuNav li {
+  list-style: none;
+  margin-right: 60px;
+}
+
+.menuNav li button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/*Dropdown*/
+.dropdownMenu ul {
+  list-style: none;
+}
+
+.dropdownMenu ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.sublogo {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.dropdownMenu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.sub-menu-01 {
+  display: none;
+}
+
+.sub-menu-01 li {
+  border-bottom: 1px solid red;
+}
+
+.dropdownMenu ul li:hover .sub-menu-01 {
+  display: block;
+  position: absolute;
+  background: rgb(214, 214, 214);
+  margin-top: 15px;
+}
+
+.dropdownMenu ul li:hover .sub-menu-01 ul {
+  display: block;
+}
+
+.dropdownMenu ul li:hover .sub-menu-01 ul li {
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  transform: 0.7s;
+}
+
+.dropdownMenu ul li:hover .sub-menu-01 ul li:hover {
+  background: rgb(7, 194, 194);
+}
+
+.sub-menu-02 {
+  display: none;
+}
+
+.hover-sub:hover .sub-menu-02 {
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: rgb(214, 214, 214);
+}

@@ -6,68 +6,60 @@ body {
 .navbar {
   width: 100vw;
   height: 100px;
-  background: rgb(32,30,31);
+  background: rgb(32, 30, 31);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 1px 5px 2px rgba(255,204,42);
+  box-shadow: 1px 5px 2px rgba(255, 204, 42);
 }
 
 /*Logo*/
-.logo {
-  color: red;
-  text-decoration: none;
-  font-size: 30px;
+.LogoInicial {
+  width: 130px; /*largura*/
+  height: 80px; /*altura*/
+  border-radius: 5%;
+  transition: 300ms ease-in-out;
 }
-
-.LogoInicial{
-  width: 130px;     /*largura*/
-	height: 80px;     /*altura*/
-	border-radius: 5%;
-	transition: 300ms ease-in-out;
-
-}
-
 
 /*Barra de Pesquisa*/
-#divBusca{
-  background-color:#ffffff;
-  border:solid 0.5px rgba(255,204,42);
-  border-radius:10px;
-  width:323px;
-  height:32px;
+#divBusca {
+  background-color: #ffffff;
+  border: solid 0.5px rgba(255, 204, 42);
+  border-radius: 10px;
+  width: 323px;
+  height: 32px;
 }
 
-#txtBusca{
-  float:left;
-  background-color:transparent;
-  padding-left:5px;
-  font-size:16px;
-  border:none;
-  height:30px;
-  width:191px;
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 16px;
+  border: none;
+  height: 30px;
+  width: 191px;
 }
 
-#btnBusca{
-  border:none;
-  float:left;
-  height:30px;
-  border-radius:0 7px 7px 0;
-  width:95px;
-  font-weight:bold;
-  background: rgba(255,204,42);
+#btnBusca {
+  border: none;
+  float: left;
+  height: 30px;
+  border-radius: 0 7px 7px 0;
+  width: 95px;
+  font-weight: bold;
+  background: rgba(255, 204, 42);
+  cursor: pointer;
 }
 
-#divBusca img{
-  float:left;
-  height:27px;
-  width:35px;
+/*Lupa da barra de pesquisa*/
+#divBusca .lupa {
+  float: left;
+  height: 27px;
+  width: 35px;
   margin-top: 1px;
-  
 }
 
-
-/*Menu*/
+/*Menu de ícones de Conta e Carrinho*/
 .menuNav {
   display: flex;
 }
@@ -81,7 +73,7 @@ body {
   border: 0;
   background: transparent;
   cursor: pointer;
-  color:rgb(255,204,42);
+  color: rgb(255, 204, 42);
   margin-top: 4px;
 }
 
@@ -96,63 +88,11 @@ body {
   padding: 15px;
 }
 
-.sublogo {
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-}
-
 .dropdownMenu ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
-
-.sub-menu-01 {
-  display: none;
-}
-
-.sub-menu-01 li {
-  border-bottom: 1px solid red;
-}
-
-.dropdownMenu ul li:hover .sub-menu-01 {
-  display: block;
-  position: absolute;
-  background: rgb(214, 214, 214);
-  margin-top: 15px;
-}
-
-.dropdownMenu ul li:hover .sub-menu-01 ul {
-  display: block;
-}
-
-.dropdownMenu ul li:hover .sub-menu-01 ul li {
-  width: 150px;
-  text-align: center;
-  border-radius: 10px;
-  transform: 0.7s;
-}
-
-.dropdownMenu ul li:hover .sub-menu-01 ul li:hover {
-  background: rgb(7, 194, 194);
-}
-
-.sub-menu-02 {
-  display: none;
-}
-
-.hover-sub:hover .sub-menu-02 {
-  display: block;
-  position: absolute;
-  margin-top: -40px;
-  margin-left: 140px;
-  background: rgb(214, 214, 214);
-}
-
-
-
 
 .dp-menu ul {
   list-style-type: none;
@@ -160,8 +100,8 @@ body {
 }
 
 .dp-menu ul {
-  color:rgb(214, 214, 214);
-  background-color: rgba(32,30,31);
+  color: rgb(214, 214, 214);
+  background-color: rgba(32, 30, 31);
   border-bottom: 0.5px solid rgb(0, 0, 0);
   border-radius: 10%;
 }
@@ -176,14 +116,15 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 10px;
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
+/* Hover do dropdown*/
 .dp-menu ul li a:hover {
-  background-color: var(--cor-hover);
+  color: rgba(255, 204, 42);
 }
 
-/*sub menu*/
+/*Funcionamento sub menu*/
 .dp-menu ul ul {
   display: none;
   left: 0;
@@ -195,13 +136,9 @@ body {
 }
 
 .dp-menu ul ul {
-  width: 150px
+  width: 150px;
 }
 
 .dp-menu ul ul li a {
   display: block;
 }
-
-
-
-

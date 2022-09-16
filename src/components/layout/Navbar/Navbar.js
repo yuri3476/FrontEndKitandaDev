@@ -9,56 +9,42 @@ import { FiSearch } from "react-icons/fi";
 function Navbar() {
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">
-        <h3>VB</h3>
-      </Link>
+      <img className="LogoInicial"src="kitandaDev.jpg" alt="KitandaDev"></img>
+      
 
       <div class="dropdownMenu">
+      <nav class="dp-menu">
         <ul>
-          <li>
-            <Link to="/" className="sublogo">
-              Departamentos
-            </Link>
-            <div className="sub-menu-01">
-              <ul>
-                <li className="hover-sub">
-                  <Link to="/">Perifericos</Link>
-                  <div className="sub-menu-02">
-                    <ul>
-                      <li>
-                        <Link to="/">Teclado</Link>
-                      </li>
-                      <li>
-                        <Link to="/">Mouse</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li className="hover-sub">
-                  <Link to="/">Hardware</Link>
-                  <div className="sub-menu-02">
-                    <ul>
-                      <li>
-                        <Link to="/">Placa de video</Link>
-                      </li>
-                      <li>
-                        <Link to="/">Processador</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a>
+                <ul>
+                    <li><a href="#">Teclado</a></li>
+                    <li><a href="#">Mouse</a></li>
+                    <li><a href="#">Headset</a></li>
+                    <li><a href="#series">Monitor</a></li>
+                    <li><a href="#">Cadeira Gamer</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Quem somos</a></li>
         </ul>
+    </nav>
+
       </div>
 
-      <div className="search">
-        <input type="text" placeholder="Digite o que deseja procurar..." />
-        <button className="buttonSearch">
-          <FiSearch size={25} />
-        </button>
-      </div>
+      <div id="divBusca">
+      <img src="lupa.png" alt="Buscar..."/>
+      <input type="text" id="txtBusca" placeholder="Pesquise seu produto"/>
+      <button id="btnBusca">Buscar</button>
+    </div>
+
+
+
+
+
+
+
+ 
 
       <ul className="menuNav">
         <li>

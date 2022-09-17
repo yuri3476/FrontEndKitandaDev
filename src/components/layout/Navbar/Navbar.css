@@ -129,6 +129,7 @@ body {
   display: none;
   left: 0;
   position: absolute;
+  z-index: 1;
 }
 
 .dp-menu ul li:hover ul {

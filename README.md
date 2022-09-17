@@ -1,6 +1,7 @@
 # KitandaDev FrontEnd
 
-Esse é o frontEnd da KitandaDev. O projeto se encontra em andamento.
+Esse é o frontEnd da KitandaDev.   
+O projeto se encontra em andamento.  
 Para acessar o BackEnd [Clique aqui](https://github.com/Regulus01/BackEndKitandaDev).
 
 ## Projeto - Em construção

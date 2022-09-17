@@ -12,7 +12,7 @@ function Navbar() {
       <a href="#">
         <img
           className="LogoInicial"
-          src="kitandaDev.jpg"
+          src="logokitandadev.png"
           alt="KitandaDev"
         ></img>
       </a>

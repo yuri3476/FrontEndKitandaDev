@@ -9,45 +9,42 @@ import { FiSearch } from "react-icons/fi";
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="#">
+      <Link to="/">
         <img
           className="LogoInicial"
           src="logokitandadev.png"
           alt="KitandaDev"
         ></img>
-      </a>
+      </Link>
 
       <div class="dropdownMenu">
         <nav class="dp-menu">
           <ul>
             <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Produtos</a>
+              <Link to="">Produtos</Link>
               <ul>
                 <li>
-                  <a href="#">Teclado</a>
+                  <Link to="/teclado">Teclado</Link>
                 </li>
                 <li>
-                  <a href="#">Mouse</a>
+                  <Link to="/mouse">Mouse</Link>
                 </li>
                 <li>
-                  <a href="#">Headset</a>
+                  <Link to="/headset">Headset</Link>
                 </li>
                 <li>
-                  <a href="#series">Monitor</a>
+                  <Link to="/monitor">Monitor</Link>
                 </li>
                 <li>
-                  <a href="#">Cadeira Gamer</a>
+                  <Link to="/cadeira">Cadeira Gamer</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#">Contato</a>
+              <Link to="/contato">Contato</Link>
             </li>
             <li>
-              <a href="#">Quem somos</a>
+              <Link to="/quemsomos">Quem somos</Link>
             </li>
           </ul>
         </nav>
@@ -62,12 +59,16 @@ function Navbar() {
       <ul className="menuNav">
         <li>
           <button className="account">
-            <VscAccount size={25} />
+            <Link to="/login">
+              <VscAccount size={25} className="link" />
+            </Link>
           </button>
         </li>
         <li>
           <button className="cart">
-            <IoCartSharp size={25} />
+            <Link to="/carrinho" className="link">
+              <IoCartSharp size={25} />
+            </Link>
           </button>
         </li>
       </ul>

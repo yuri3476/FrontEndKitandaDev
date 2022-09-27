@@ -23,5 +23,7 @@ Para acessar o BackEnd [Clique aqui](https://github.com/Regulus01/BackEndKitanda
 width:100%;">
 <img src="https://avatars.githubusercontent.com/u/112266976?v=4" alt="rails" width="200" height= "200" style="max-
 width:100%;">
+<img src="https://avatars.githubusercontent.com/u/112266976?v=4" alt="rails" width="200" height= "200" style="max-
+width:100%;">
 
 [Yuri](https://github.com/yuri3476) [Victor](https://github.com/V1ct0rSb)

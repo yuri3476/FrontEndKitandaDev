@@ -12,7 +12,7 @@ import Monitor from "./components/pages/Monitor";
 import Cadeira from "./components/pages/Cadeira";
 import Contato from "./components/pages/Contato";
 import Quemsomos from "./components/pages/Quemsomos";
-import Login from "./components/pages/Login";
+import Login from "./components/pages/Login/Login";
 import Carrinho from "./components/pages/Carrinho";
 
 function App() {

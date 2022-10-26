@@ -1,6 +1,6 @@
 .container-slider {
   max-width: 1100px;       /*Largura do Slider*/
-  height: 360px;           /* Altura do Slider*/
+  height: 350px;           /* Altura do Slider*/
   margin: 65px auto 0;
   position: relative;
   overflow: hidden;

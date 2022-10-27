@@ -1,5 +1,43 @@
-.main {
-  height: 1000px;
-  margin: 0 auto;
-  background: rgba(128, 128, 128, 0.384);
+.main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
 }
+
+h1{
+  color: #C0C0C0;
+  font-family: arial;
+  font-size: 27px;
+}
+
+.img_produto{
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  width: 240px;
+  padding-top: 10px;
+
+}
+
+.nome_produto{
+  font-size: 25px;
+  font-family: arial;
+  padding: 20px;
+ 
+}
+
+.link-grid{
+	font-weight: bold;
+	font-size: 1rem;
+	border-radius: 5%;
+	padding: 2px;
+}
+
+
+
+
+
+

@@ -1,43 +1,75 @@
-.main{
+h1 {
+  margin-top: 15px; /*Distancia do carrossel*/
+  background: rgb(32, 30, 31);
+  color: rgb(214, 214, 214);
+  padding: 5px 10px;
+  text-align: center;
+  border-top: 3px solid rgba(255, 204, 42);
+}
+
+.catalogo {
   display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
   align-items: center;
-  justify-self: center;
+  border: 3px solid rgba(255, 204, 42);
+  margin-bottom: 50px; /*Distancia do Footer*/
 }
 
-h1{
-  color: #C0C0C0;
-  font-family: arial;
-  font-size: 27px;
-}
-
-.img_produto{
+.card {
+  padding: 15px;
   display: flex;
-  flex-direction: column;
-  height: 360px;
-  width: 240px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*Imagem do produto*/
+.card img {
+  width: 280px; /*Largura da imagem*/
+  height: 250px; /* Altura da imgaem*/
+}
+
+.descriao-produto {
+  display: inline-block;
+  text-align: center;
+}
+
+/*Nome do produto*/
+.descriao-produto h2 {
+  font-size: 20px; /*Tamanho da fonte*/
   padding-top: 10px;
-
+  padding-bottom: 5px;
 }
 
-.nome_produto{
-  font-size: 25px;
-  font-family: arial;
-  padding: 20px;
- 
+/*Valor do produto*/
+.descriao-produto h3 {
+  font-size: 20px; /*Tamanho da fonte*/
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
-.link-grid{
-	font-weight: bold;
-	font-size: 1rem;
-	border-radius: 5%;
-	padding: 2px;
+/*Botão de Compra*/
+.descriao-produto a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.descriao-produto p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bolder;
+  background: rgba(255, 204, 42);
+  padding: 15px 20px;
+  border-radius: 100px;
+  color: rgb(32, 30, 31);
+  margin-bottom: 5px;
+}
+/*Animação do botão ao passar por cima*/
+.descriao-produto p:hover {
+  background: rgb(197, 162, 45);
 }
 
-
-
-
-
-
+.descriao-produto a .icon {
+  margin-right: 10px;
+}

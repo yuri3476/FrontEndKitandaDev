@@ -11,6 +11,8 @@ h1 {
   display: flex;
   list-style-type: none;
   justify-content: center;
+ 
+  flex-wrap: wrap;
   align-items: center;
   border: 3px solid rgba(255, 204, 42);
   margin-bottom: 50px; /*Distancia do Footer*/
@@ -23,6 +25,13 @@ h1 {
   justify-content: space-around;
 }
 
+.card img {
+  max-width: 400px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
 .descriao-produto {
   display: inline-block;
   text-align: center;
@@ -33,6 +42,11 @@ h1 {
   font-size: 20px; /*Tamanho da fonte*/
   padding-top: 10px;
   padding-bottom: 5px;
+
+  max-width: 16ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*Valor do produto*/

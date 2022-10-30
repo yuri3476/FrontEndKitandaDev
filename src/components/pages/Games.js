@@ -2,13 +2,13 @@ import React from "react";
 
 import Navbar from "../layout/Navbar/Navbar";
 
-function Monitor() {
+function Games() {
   return (
     <div>
       <Navbar />
-      <h1>Monitor</h1>
+      <h1>Games</h1>
     </div>
   );
 }
 
-export default Monitor;
+export default Games;

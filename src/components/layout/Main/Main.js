@@ -30,9 +30,10 @@ class App extends Component {
                   src={produto.imagens[0].linkImagem}
                   useMap="#shape"
                   alt="imagem-produto"
+                  width="100%"
                 ></img>
                 <div class="descriao-produto">
-                  <h2>{produto.nome}</h2>
+                  <h2 maxlength="5">{produto.nome}</h2>
                   <h3>R${produto.preco},00</h3>
                   <a class="link-grid" href="" target="_blank">
                     <p>

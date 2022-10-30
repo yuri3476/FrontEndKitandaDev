@@ -2,13 +2,13 @@ import React from "react";
 
 import Navbar from "../layout/Navbar/Navbar";
 
-function Cadeira() {
+function Livraria() {
   return (
     <div>
       <Navbar />
-      <h1>Cadeira Gamer</h1>
+      <h1>Livraria</h1>
     </div>
   );
 }
 
-export default Cadeira;
+export default Livraria;

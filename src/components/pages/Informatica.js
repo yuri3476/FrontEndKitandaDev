@@ -2,13 +2,13 @@ import React from "react";
 
 import Navbar from "../layout/Navbar/Navbar";
 
-function Headset() {
+function Informatica() {
   return (
     <div>
       <Navbar />
-      <h1>Headset</h1>
+      <h1>Informática</h1>
     </div>
   );
 }
 
-export default Headset;
+export default Informatica;

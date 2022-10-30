@@ -1,14 +1,13 @@
 import React from "react";
-
 import Navbar from "../layout/Navbar/Navbar";
 
-function Mouse() {
+function Celulares() {
   return (
     <div>
       <Navbar />
-      <h1>Mouse</h1>
+      <h1>Celulares</h1>
     </div>
   );
 }
 
-export default Mouse;
+export default Celulares;

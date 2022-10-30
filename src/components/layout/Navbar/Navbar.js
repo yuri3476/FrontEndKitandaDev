@@ -24,19 +24,19 @@ function Navbar() {
               <Link to="">Produtos</Link>
               <ul>
                 <li>
-                  <Link to="/teclado">Teclado</Link>
+                  <Link to="/Celulares">Celulares</Link>
                 </li>
                 <li>
-                  <Link to="/mouse">Mouse</Link>
+                  <Link to="/Eletronicos">Eletrônicos</Link>
                 </li>
                 <li>
-                  <Link to="/headset">Headset</Link>
+                  <Link to="/Games">Games</Link>
                 </li>
                 <li>
-                  <Link to="/monitor">Monitor</Link>
+                  <Link to="/Informatica">Informática</Link>
                 </li>
                 <li>
-                  <Link to="/cadeira">Cadeira Gamer</Link>
+                  <Link to="/Livraria">Livraria</Link>
                 </li>
               </ul>
             </li>

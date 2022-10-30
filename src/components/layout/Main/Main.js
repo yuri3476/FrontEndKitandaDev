@@ -21,7 +21,7 @@ class App extends Component {
     const { produtos } = this.state;
     return (
       <section class="container" id="grid-container">
-        <h1>Produtos mais vistos</h1>
+        <h1>Produtos mais vendidos</h1>
         <div class="catalogo">
           {produtos.map((produto) => (
             <li key={produto.nome}>

@@ -21,7 +21,7 @@ function Navbar() {
         <nav class="dp-menu">
           <ul>
             <li>
-              <Link to="">Produtos</Link>
+              <Link to="">Departamento</Link>
               <ul>
                 <li>
                   <Link to="/Celulares">Celulares</Link>

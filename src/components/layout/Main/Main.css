@@ -8,28 +8,30 @@ h1 {
 }
 
 .catalogo {
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    "card card card "
+    "card card card "
+    "card card card "
+    "card card card ";
+
+  padding: 0;
   list-style-type: none;
-  justify-content: center;
- 
-  flex-wrap: wrap;
-  align-items: center;
   border: 3px solid rgba(255, 204, 42);
   margin-bottom: 50px; /*Distancia do Footer*/
 }
 
 .card {
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 100px;
+  max-width: 900px;
+  text-align: center;
+  border: 3px solid rgba(255, 204, 42);
+  margin: auto;
 }
 
 .card img {
-  max-width: 400px;
-  max-height: 200px;
   width: auto;
-  height: auto;
+  height: 250px;
 }
 
 .descriao-produto {
@@ -40,10 +42,10 @@ h1 {
 /*Nome do produto*/
 .descriao-produto h2 {
   font-size: 20px; /*Tamanho da fonte*/
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 
-  max-width: 16ch;
+  max-width: 25ch;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -53,7 +55,7 @@ h1 {
 .descriao-produto h3 {
   font-size: 20px; /*Tamanho da fonte*/
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
 /*Botão de Compra*/

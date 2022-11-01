@@ -10,9 +10,9 @@ import { FaTwitter } from "react-icons/fa";
 function Footer() {
   return (
     <footer>
-      <div class="container-footer">
-        <div class="row-footer">
-          <div class="footer-col">
+      <div className="container-footer">
+        <div className="row-footer">
+          <div className="footer-col">
             <h4>Empresa</h4>
             <ul>
               <li>
@@ -27,7 +27,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>Obter ajuda</h4>
             <ul>
               <li>
@@ -48,7 +48,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>Loja online</h4>
             <ul>
               <li>
@@ -57,10 +57,10 @@ function Footer() {
             </ul>
           </div>
 
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>Redes Sociais</h4>
 
-            <div class="medias-socias">
+            <div className="medias-socias">
               <Link to="/">
                 <FaFacebookF size={25} />
               </Link>

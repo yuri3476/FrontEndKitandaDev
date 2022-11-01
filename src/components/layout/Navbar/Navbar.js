@@ -17,8 +17,8 @@ function Navbar() {
         ></img>
       </Link>
 
-      <div class="dropdownMenu">
-        <nav class="dp-menu">
+      <div className="dropdownMenu">
+        <nav className="dp-menu">
           <ul>
             <li>
               <Link to="">Departamento</Link>

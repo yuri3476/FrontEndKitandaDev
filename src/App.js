@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 //Import Pages
 import Home from "../src/components/pages/Home";
-import Celulares from "./components/pages/Celulares";
-import Eletronicos from "./components/pages/Eletronicos";
-import Games from "./components/pages/Games";
-import Informatica from "./components/pages/Informatica";
-import Livraria from "./components/pages/Livraria";
+import Celulares from "../src/components/pages/Departamento/Celulares";
+import Eletronicos from "../src/components/pages/Departamento/Eletronicos";
+import Games from "../src/components/pages/Departamento/Games";
+import Informatica from "../src/components/pages/Departamento/Informatica";
+import Livraria from "../src/components/pages/Departamento/Livraria";
 import Contato from "./components/pages/Contato";
 import Quemsomos from "./components/pages/Quemsomos";
 import Login from "./components/pages/Login/Login";

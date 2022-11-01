@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import api4 from "./apinformatica.js";
-import Navbar from "../layout/Navbar/Navbar";
-import Footer from "../layout/Footer/Footer";
+import api5 from "./Api/apilivraria";
+import Navbar from "../../layout/Navbar/Navbar";
+import Footer from "../../layout/Footer/Footer";
 import { IoCartSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const response = await api4.get("");
+    const response = await api5.get("");
 
     console.log(response.data);
 
@@ -25,20 +25,20 @@ class App extends Component {
         <div>
           <Navbar />
         </div>
-        <section class="container" id="grid-container">
-          <h1>Informática</h1>
-          <div class="catalogo">
+        <section className="container" id="grid-container">
+          <h1>Livraria</h1>
+          <div className="catalogo">
             {produtos.map((produto) => (
               <li key={produto.nome}>
                 <div>
-                  <Link to="/carrinho" class="card">
+                  <Link to="/carrinho" className="card">
                     <img
                       src={produto.imagens[0].linkImagem}
                       useMap="#shape"
                       alt="imagem-produto"
                       width="100%"
                     ></img>
-                    <div class="descricao-produto">
+                    <div className="descricao-produto">
                       <h2>{produto.nome}</h2>
                       <h3>R$ {produto.preco},00</h3>
                     </div>

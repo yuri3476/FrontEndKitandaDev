@@ -8,43 +8,49 @@ h1 {
 }
 
 .catalogo {
-  display: grid;
-  grid-template-areas:
-    "card card card "
-    "card card card "
-    "card card card "
-    "card card card ";
-
-  padding: 0;
-  list-style-type: none;
+  background: rgb(223, 223, 223); /*Cor de fundo*/
   border: 3px solid rgba(255, 204, 42);
-  margin-bottom: 50px; /*Distancia do Footer*/
-}
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 30px; /*Distancia do footer*/
 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
 .card {
-  padding: 100px;
-  max-width: 900px;
-  text-align: center;
-  border: 3px solid rgba(255, 204, 42);
-  margin: auto;
-}
+  background-color: white; /* Cor de fundo do card*/
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+}
 .card img {
-  width: auto;
-  height: 250px;
-}
+  margin: auto;
 
-.descriao-produto {
-  display: inline-block;
-  text-align: center;
+  /*Manter a proporção da imagem*/
+  max-width: 300px;
+  max-height: 280px;
+  width: auto;
+  height: auto;
 }
 
 /*Nome do produto*/
-.descriao-produto h2 {
+.descricao-produto h2 {
+  margin: auto;
   font-size: 20px; /*Tamanho da fonte*/
-  padding-top: 25px;
+  font-weight: lighter;
+  color: rgb(58, 58, 58);
   padding-bottom: 10px;
 
+  /*Quantidade de caracteres*/
   max-width: 25ch;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -52,34 +58,9 @@ h1 {
 }
 
 /*Valor do produto*/
-.descriao-produto h3 {
+.descricao-produto h3 {
   font-size: 20px; /*Tamanho da fonte*/
-  padding-top: 5px;
-  padding-bottom: 12px;
-}
-
-/*Botão de Compra*/
-.descriao-produto a {
-  cursor: pointer;
   text-decoration: none;
-}
-.descriao-produto p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-weight: bolder;
-  background: rgba(255, 204, 42);
-  padding: 15px 20px;
-  border-radius: 100px;
-  color: rgb(32, 30, 31);
-  margin-bottom: 5px;
-}
-/*Animação do botão ao passar por cima*/
-.descriao-produto p:hover {
-  background: rgb(197, 162, 45);
-}
-
-.descriao-produto a .icon {
-  margin-right: 10px;
+  padding-bottom: 30px;
+  color: black;
 }

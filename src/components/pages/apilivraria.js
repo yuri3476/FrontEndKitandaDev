@@ -5,8 +5,3 @@ const api5 = axios.create({
 });
 
 export default api5;
-
-
-
-
-

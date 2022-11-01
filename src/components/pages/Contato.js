@@ -8,7 +8,7 @@ function Contato() {
     <div>
       <Navbar />
       <h1>Contato</h1>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../Main/Main.css";
 import api from "./api.js";
-import { IoCartSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 class App extends Component {
@@ -26,7 +25,7 @@ class App extends Component {
           {produtos.map((produto) => (
             <li key={produto.nome}>
               <div>
-                <Link to="/carrinho" className="card">
+                <Link to="/Produto" className="card">
                   <img
                     src={produto.imagens[0].linkImagem}
                     useMap="#shape"

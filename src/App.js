@@ -14,6 +14,8 @@ import Contato from "./components/pages/Contato";
 import Quemsomos from "./components/pages/Quemsomos";
 import Login from "./components/pages/Login/Login";
 import Carrinho from "./components/pages/Carrinho";
+import Busca from "./components/pages/Busca";
+import Produto from "./components/pages/Produto";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Busca" element={<Busca />} />
+        <Route path="/Produto" element={<Produto />} />
 
         <Route path="/Celulares" element={<Celulares />} />
         <Route path="/Eletronicos" element={<Eletronicos />} />

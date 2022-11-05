@@ -16,11 +16,15 @@ import Login from "./components/pages/Login/Login";
 import Carrinho from "./components/pages/Carrinho";
 import Busca from "./components/pages/Busca";
 import Produto from "./components/pages/Produto";
-
+import Navbar from "./components/layout/Navbar/Navbar";
+import Footer
+ from "./components/layout/Footer/Footer";
 function App() {
   return (
     //Rotas
+
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Busca" element={<Busca />} />
@@ -38,6 +42,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/carrinho" element={<Carrinho />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

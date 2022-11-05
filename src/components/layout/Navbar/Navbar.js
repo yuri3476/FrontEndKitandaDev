@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Navbar/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 //React-Icons
 import { VscAccount } from "react-icons/vsc";
 import { IoCartSharp } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
 
-function Navbar() {
+
+function Navbar(props) {
+  const { search, setSearch } = useState("");
+  const navigate = useNavigate();
+
+  function buscar(e) {
+    navigate("/Busca?query=" + search)
+  }
+
   return (
     <nav className="navbar">
       <Link to="/">
@@ -50,11 +58,17 @@ function Navbar() {
         </nav>
       </div>
 
-      <div id="divBusca">
+      <form id="divBusca" onSubmit={buscar}>
         <FiSearch size={25} className="lupa" />
-        <input type="text" id="txtBusca" placeholder="Pesquise seu produto" />
+        <input
+          type="text"
+          name="query"
+          id="query"
+          placeholder="Pesquise seu produto"
+          onChange={(e) => setSearch(e.target.value)}
+        />
         <button id="btnBusca">Buscar</button>
-      </div>
+      </form>
 
       <ul className="menuNav">
         <li>

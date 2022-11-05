@@ -1,12 +1,10 @@
 import React from "react";
 import "../Login/Login.css";
 
-import Navbar from "../../layout/Navbar/Navbar";
 
 function Login() {
   return (
     <div>
-      <Navbar />
       <div className="container-animation">
         <div class="login">
           <h1>Login</h1>

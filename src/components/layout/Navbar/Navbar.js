@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Navbar/Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 //React-Icons
@@ -6,13 +6,11 @@ import { VscAccount } from "react-icons/vsc";
 import { IoCartSharp } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
 
-
-function Navbar(props) {
-  const { search, setSearch } = useState("");
+function Navbar({search, setSearch}) {
   const navigate = useNavigate();
 
-  function buscar(e) {
-    navigate("/Busca?query=" + search)
+  function buscar() {
+    navigate("/Busca?query=" + search);
   }
 
   return (

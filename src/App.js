@@ -17,14 +17,16 @@ import Carrinho from "./components/pages/Carrinho";
 import Busca from "./components/pages/Busca";
 import Produto from "./components/pages/Produto";
 import Navbar from "./components/layout/Navbar/Navbar";
-import Footer
- from "./components/layout/Footer/Footer";
+import Footer from "./components/layout/Footer/Footer";
+import { useState } from "react";
+
 function App() {
+  const [search, setSearch] = useState("");
+
   return (
     //Rotas
-
     <Router>
-      <Navbar/>
+      <Navbar search={search} setSearch={setSearch} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Busca" element={<Busca />} />
@@ -42,7 +44,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/carrinho" element={<Carrinho />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

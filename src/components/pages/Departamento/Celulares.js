@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../../layout/Navbar/Navbar";
-import Footer from "../../layout/Footer/Footer";
 import api1 from "./Api/apicelular";
 import { Link } from "react-router-dom";
 
@@ -21,9 +19,6 @@ class App extends Component {
     const { produtos } = this.state;
     return (
       <>
-        <div>
-          <Navbar />
-        </div>
         <section className="container" id="grid-container">
           <h1>Celulares</h1>
           <div className="catalogo">
@@ -46,7 +41,6 @@ class App extends Component {
               </li>
             ))}
           </div>
-          <Footer />
         </section>
       </>
     );

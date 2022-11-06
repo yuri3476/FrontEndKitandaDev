@@ -11,7 +11,7 @@ import Games from "../src/components/pages/Departamento/Games";
 import Informatica from "../src/components/pages/Departamento/Informatica";
 import Livraria from "../src/components/pages/Departamento/Livraria";
 import Contato from "./components/pages/Contato";
-import Quemsomos from "./components/pages/Quemsomos";
+import Quemsomos from "./components/pages/QuemSomos/Quemsomos";
 import Login from "./components/pages/Login/Login";
 import Carrinho from "./components/pages/Carrinho";
 import Busca from "./components/pages/Busca";

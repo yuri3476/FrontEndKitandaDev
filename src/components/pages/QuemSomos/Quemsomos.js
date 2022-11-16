@@ -1,6 +1,5 @@
 import React from "react";
 import { DiGithubBadge } from "react-icons/di";
-import { Link } from "react-router-dom";
 
 import "../QuemSomos/Quemsomos.css";
 function Quemsomos() {
@@ -13,7 +12,7 @@ function Quemsomos() {
             <div className="img-container">
               <img
                 src="https://avatars.githubusercontent.com/u/75454584?v=4"
-                alt=""
+                alt="imagem-perfil"
               ></img>
             </div>
           </div>
@@ -36,7 +35,7 @@ function Quemsomos() {
             <div className="img-container">
               <img
                 src="https://avatars.githubusercontent.com/u/83989931?v=4"
-                alt=""
+                alt="imagem-perfil"
               ></img>
             </div>
           </div>
@@ -82,7 +81,7 @@ function Quemsomos() {
             <div className="img-container">
               <img
                 src="https://avatars.githubusercontent.com/u/112266976?v=4"
-                alt=""
+                alt="imagem-perfil"
               ></img>
             </div>
           </div>
@@ -104,8 +103,8 @@ function Quemsomos() {
           <div className="top">
             <div className="img-container">
               <img
-                src="https://99prod.s3.amazonaws.com/uploads/f1350adc-bdfd-43bf-b210-78d1919cbcf5/Google.png"
-                alt=""
+                src="https://avatars.githubusercontent.com/u/61235040?v=4"
+                alt="imagem-perfil"
               ></img>
             </div>
           </div>
@@ -113,7 +112,11 @@ function Quemsomos() {
             <h3>Leonardo</h3>
             <h4>Back</h4>
             <p>frase </p>
-            <a href="" target="_blank" className="btn">
+            <a
+              href="https://github.com/LeoSTeles"
+              target="_blank"
+              className="btn"
+            >
               <DiGithubBadge size={25} className="Github" />
               GitHub
             </a>

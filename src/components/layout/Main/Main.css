@@ -8,6 +8,7 @@ h1 {
 }
 
 .catalogo {
+  min-height: 465px;
   background: rgb(223, 223, 223); /*Cor de fundo*/
   border: 3px solid rgba(255, 204, 42);
   list-style: none;
@@ -16,6 +17,7 @@ h1 {
 
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;

@@ -16,7 +16,7 @@ function Footer() {
             <h4>Empresa</h4>
             <ul>
               <li>
-                <Link to="/"> Quem somos </Link>
+                <Link to="/quemsomos"> Quem somos </Link>
               </li>
               <li>
                 <Link to="/"> nossos serviços </Link>

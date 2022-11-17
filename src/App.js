@@ -10,7 +10,7 @@ import Eletronicos from "../src/components/pages/Departamento/Eletronicos";
 import Games from "../src/components/pages/Departamento/Games";
 import Informatica from "../src/components/pages/Departamento/Informatica";
 import Livraria from "../src/components/pages/Departamento/Livraria";
-import Contato from "./components/pages/Contato";
+import CadastrarProduto from "./components/pages/CadastrarProduto/CadastrarProduto";
 import Quemsomos from "./components/pages/QuemSomos/Quemsomos";
 import Login from "./components/pages/Login/Login";
 import Carrinho from "./components/pages/Carrinho";
@@ -38,7 +38,7 @@ function App() {
         <Route path="/Informatica" element={<Informatica />} />
         <Route path="/Livraria" element={<Livraria />} />
 
-        <Route path="/contato" element={<Contato />} />
+        <Route path="/CadastrarProduto" element={<CadastrarProduto />} />
         <Route path="/quemsomos" element={<Quemsomos />} />
 
         <Route path="/login" element={<Login />} />

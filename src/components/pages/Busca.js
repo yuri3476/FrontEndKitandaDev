@@ -15,7 +15,7 @@ export default function Busca() {
   return (
     <>
       <section className="container" id="grid-container">
-        <h1>Resulatdo de busca para: {query}</h1>
+        <h1>Resultado de busca para: {query}</h1>
         <div className="catalogo">
           {produtos.map((produto) => (
             <li key={produto.nome}>

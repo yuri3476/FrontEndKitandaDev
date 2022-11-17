@@ -46,12 +46,14 @@ function Navbar({search, setSearch}) {
                 </li>
               </ul>
             </li>
-            <li>
-              <Link to="/contato">Contato</Link>
-            </li>
+
             <li>
               <Link to="/quemsomos">Quem somos</Link>
             </li>
+            <li>
+              <Link to="/CadastrarProduto">Cadastrar Produto</Link>
+            </li>
+       
           </ul>
         </nav>
       </div>

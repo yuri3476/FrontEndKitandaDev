@@ -56,10 +56,10 @@ button:hover {
   height: 837px;
   background-image: linear-gradient(
     to left,
-    rgba(255, 204, 42),
-    rgb(255, 55, 55),
-    rgb(255, 251, 125),
-    rgb(165, 252, 205) 
+    rgb(255, 227, 44),
+    rgb(133, 255, 189),
+    rgb(218, 153, 115),
+    rgb(255, 227, 44)
   );
   background-size: 500% 100%;
   animation: degrade-animacao 5s infinite alternate;

@@ -2,6 +2,8 @@
   border: 3px solid rgba(255, 204, 42);
   padding-top: 75px;
   padding-bottom: 76px;
+  background: rgb(223, 223, 223); /*Cor de
+   fundo*/
 
   display: flex;
   justify-content: space-around;

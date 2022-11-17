@@ -5,7 +5,7 @@ import "../QuemSomos/Quemsomos.css";
 function Quemsomos() {
   return (
     <div className="titulo">
-      <h1>QuemSomos</h1>
+      <h1>Quem Somos</h1>
       <div className="container-contato">
         <div className="Card">
           <div className="top">

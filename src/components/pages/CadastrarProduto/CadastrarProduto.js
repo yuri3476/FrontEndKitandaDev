@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Cadastrarproduto.css";
+import { Link, useNavigate } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -79,17 +80,21 @@ class App extends Component {
                 ></input>
               </div>
             </div>
+
             <div className="col5">Categoria:</div>
             <div className="row mt-2">
-              <div className="col9">
-                <input
-                  value={this.state.categoria}
-                  onChange={this.txtCategoria_change}
-                  className="form-control name-pull-image"
-                  type="text"
-                ></input>
+              <div className="row2">
+                <select id="categoria1" class="categoria2" 
+                value={this.state.categoria} onChange={this.txtCategoria_change}>
+                  <option selected>Celulares</option>
+                  <option selected>Eletrônicos</option>
+                  <option selected>Games</option>
+                  <option selected>Informática</option>
+                  <option selected>Livraria</option>
+                </select>   
               </div>
             </div>
+
             <div className="col5">Quantidade:</div>
             <div className="row mt-2">
               <div className="col9">
@@ -101,6 +106,7 @@ class App extends Component {
                 ></input>
               </div>
             </div>
+
             <div className="col5">Descrição:</div>
             <div className="row mt-2">
               <div className="col9">
@@ -112,6 +118,7 @@ class App extends Component {
                 ></input>
               </div>
             </div>
+
             <div className="col5">Preço:</div>
             <div className="row mt-2">
               <div className="col9">
@@ -123,6 +130,7 @@ class App extends Component {
                 ></input>
               </div>
             </div>
+
             <div className="col5">linkImagem:</div>
             <div className="row mt-2">
               <div className="col9">
@@ -134,6 +142,7 @@ class App extends Component {
                 ></input>
               </div>
             </div>
+
             <div className="row1">
               <div className="col-1">
                 <button
@@ -144,7 +153,9 @@ class App extends Component {
                 </button>
               </div>
               <div className="col-1">
+              <Link to="/">
                 <button className="btn btn-primary">Voltar</button>
+                </Link>
               </div>
             </div>
           </div>

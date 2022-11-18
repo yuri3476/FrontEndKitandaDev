@@ -1,4 +1,4 @@
-mimport React, { Component } from "react";
+import React, { Component } from "react";
 import "./Cadastrarproduto.css";
 import { Link, useNavigate } from "react-router-dom";
 

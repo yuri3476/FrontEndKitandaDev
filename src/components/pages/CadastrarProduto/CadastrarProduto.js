@@ -52,7 +52,7 @@ class App extends Component {
     const requestOptions = {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json-patch+json",
       },
       body: JSON.stringify(dados),
     };

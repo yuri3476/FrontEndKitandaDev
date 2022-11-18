@@ -86,6 +86,7 @@ class App extends Component {
               <div className="row2">
                 <select id="categoria1" class="categoria2" 
                 value={this.state.categoria} onChange={this.txtCategoria_change}>
+                  <option selected>Selecione</option>
                   <option selected>Celulares</option>
                   <option selected>Eletrônicos</option>
                   <option selected>Games</option>

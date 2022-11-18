@@ -57,7 +57,7 @@ class App extends Component {
       body: JSON.stringify(dados),
     };
 
-    const url = "https:ikitandaapi.azurewebsites.net/api/Produto";
+    const url = "https://ikitandaapi.azurewebsites.net/api/Produto";
 
     fetch(url, requestOptions)
       .then(alert("Produto Cadastrado!!"))

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+mimport React, { Component } from "react";
 import "./Cadastrarproduto.css";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -52,7 +52,7 @@ class App extends Component {
     const requestOptions = {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json-patch+json",
       },
       body: JSON.stringify(dados),
     };

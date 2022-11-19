@@ -51,6 +51,16 @@ button:hover {
   box-shadow: rgb(197, 162, 45) 0px 1px 4px, rgb(197, 162, 45) 0px 0px 0px 3px;
 }
 
+.login .cadastro {
+  padding-top: 25px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.login .cadastro a {
+  color: rgb(197, 162, 45);
+}
+
 /*Animação de fundo*/
 .container-animation {
   height: 837px;

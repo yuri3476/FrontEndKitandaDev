@@ -1,7 +1,6 @@
 import React from "react";
 import "../Login/Login.css";
 
-
 function Login() {
   return (
     <div>
@@ -24,6 +23,10 @@ function Login() {
           <br></br>
           <p className="padLogin">
             <button className="loginEnviar">Enviar</button>
+          </p>
+
+          <p className="cadastro">
+            Não tem conta? <a href="/CadastroUsuario">Criar</a>
           </p>
         </div>
       </div>

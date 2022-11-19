@@ -64,104 +64,117 @@ class App extends Component {
       .catch((erro) => alert(erro));
   };
 
+  apagarFormulario = () => {
+    document.getElementById("campo").value = "";
+  };
   render() {
     return (
-      <div class="container-animation">
-        <div className="form-product">
-          <div className="row mt-5 pt-3">
-            <div className="col5">Nome:</div>
-            <div className="row mt-2">
-              <div className="col9">
-                <input
-                  value={this.state.nome}
-                  onChange={this.txtNome_change}
-                  className="form-control name-pull-image"
-                  type="text"
-                ></input>
+      <form id="campo">
+        <div class="container-animation">
+          <div className="form-product">
+            <div className="row mt-5 pt-3">
+              <div className="col5">Nome:</div>
+              <div className="row mt-2">
+                <div className="col9">
+                  <input
+                    value={this.state.nome}
+                    onChange={this.txtNome_change}
+                    className="form-control name-pull-image"
+                    type="text"
+                  ></input>
+                </div>
               </div>
-            </div>
-
-            <div className="col5">Categoria:</div>
-            <div className="row mt-2">
-              <div className="row2">
-                <select id="categoria1" class="categoria2" 
-                value={this.state.categoria} onChange={this.txtCategoria_change}>
-                  <option selected>Selecione</option>
-                  <option selected>Celulares</option>
-                  <option selected>Eletrônicos</option>
-                  <option selected>Games</option>
-                  <option selected>Informática</option>
-                  <option selected>Livraria</option>
-                </select>   
+              <div className="col5">Categoria:</div>
+              <div className="row mt-2">
+                <div className="row2">
+                  <select
+                    id="categoria1"
+                    class="categoria2"
+                    value={this.state.categoria}
+                    onChange={this.txtCategoria_change}
+                  >
+                    <option selected>Selecione</option>
+                    <option selected>Celulares</option>
+                    <option selected>Eletrônicos</option>
+                    <option selected>Games</option>
+                    <option selected>Informática</option>
+                    <option selected>Livraria</option>
+                  </select>
+                </div>
               </div>
-            </div>
-
-            <div className="col5">Quantidade:</div>
-            <div className="row mt-2">
-              <div className="col9">
-                <input
-                  value={this.state.quantidade}
-                  onChange={this.txtQuantidade_change}
-                  className="form-control name-pull-image"
-                  type="number"
-                ></input>
+              <div className="col5">Quantidade:</div>
+              <div className="row mt-2">
+                <div className="col9">
+                  <input
+                    value={this.state.quantidade}
+                    onChange={this.txtQuantidade_change}
+                    className="form-control name-pull-image"
+                    type="number"
+                  ></input>
+                </div>
               </div>
-            </div>
-
-            <div className="col5">Descrição:</div>
-            <div className="row mt-2">
-              <div className="col9">
-                <input
-                  value={this.state.descricao}
-                  onChange={this.txtDescricao_change}
-                  className="form-control name-pull-image"
-                  type="text"
-                ></input>
+              <div className="col5">Descrição:</div>
+              <div className="row mt-2">
+                <div className="col9">
+                  <input
+                    value={this.state.descricao}
+                    onChange={this.txtDescricao_change}
+                    className="form-control name-pull-image"
+                    type="text"
+                  ></input>
+                </div>
               </div>
-            </div>
-
-            <div className="col5">Preço:</div>
-            <div className="row mt-2">
-              <div className="col9">
-                <input
-                  value={this.state.preco}
-                  onChange={this.txtPreco_change}
-                  className="form-control name-pull-image"
-                  type="number"
-                ></input>
+              <div className="col5">Preço:</div>
+              <div className="row mt-2">
+                <div className="col9">
+                  <input
+                    value={this.state.preco}
+                    onChange={this.txtPreco_change}
+                    className="form-control name-pull-image"
+                    type="number"
+                  ></input>
+                </div>
               </div>
-            </div>
-
-            <div className="col5">linkImagem:</div>
-            <div className="row mt-2">
-              <div className="col9">
-                <input
-                  value={this.state.linkImagem}
-                  onChange={this.txtImagem_change}
-                  className="form-control name-pull-image"
-                  type="url"
-                ></input>
+              <div className="col5">Link da Imagem:</div>
+              <div className="row mt-2">
+                <div className="col9">
+                  <input
+                    value={this.state.linkImagem}
+                    onChange={this.txtImagem_change}
+                    className="form-control name-pull-image"
+                    type="url"
+                  ></input>
+                </div>
               </div>
-            </div>
-
-            <div className="row1">
-              <div className="col-1">
-                <button
-                  className="btn btn-primary"
-                  onClick={() => this.salvarNovo()}
-                >
-                  Salvar
-                </button>
-              </div>
-              <div className="col-1">
-              <Link to="/">
-                <button className="btn btn-primary">Voltar</button>
-                </Link>
+              <div className="row1">
+                {/* Botão de add produto */}
+                <div className="col-1">
+                  <button
+                    className="btn btn-primary"
+                    onClick={() => this.salvarNovo()}
+                  >
+                    Salvar
+                  </button>
+                </div>
+                {/* Botão de voltar para home */}
+                <div className="col-1">
+                  <Link to="/">
+                    <button className="btn btn-primary">Home</button>
+                  </Link>
+                </div>
+                <div className="col-1">
+                  <button
+                    className="btn btn-primary"
+                    onClick={() => this.apagarFormulario()}
+                  >
+                    Limpar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     );
   }
 }

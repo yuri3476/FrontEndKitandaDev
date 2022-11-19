@@ -18,6 +18,7 @@ import Busca from "./components/pages/Busca";
 import Produto from "./components/pages/Produto";
 import Navbar from "./components/layout/Navbar/Navbar";
 import Footer from "./components/layout/Footer/Footer";
+import CadastroUsuario from "./components/pages/CadastroUsuario/CadastroUsuario";
 import { useState } from "react";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Busca" element={<Busca />} />
         <Route path="/Produto" element={<Produto />} />
+        <Route path="/CadastroUsuario" element={<CadastroUsuario />} />
 
         <Route path="/Celulares" element={<Celulares />} />
         <Route path="/Eletronicos" element={<Eletronicos />} />

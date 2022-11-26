@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Cadastrarproduto.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -46,7 +46,10 @@ class App extends Component {
       quantidade: this.state.quantidade,
       descricao: this.state.descricao,
       preco: this.state.preco,
-      linkImagem: this.state.linkImagem,
+      imagem: {
+        nome: "principal",
+        linkImagem: this.state.linkImagem,
+      },
     };
 
     const requestOptions = {

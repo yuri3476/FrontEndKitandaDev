@@ -25,7 +25,7 @@ class App extends Component {
           {produtos.map((produto) => (
             <li key={produto.nome}>
               <div>
-                <Link to="/Produto" className="card">
+                <Link to={`/Produto/${produto.produtoId}`} className="card">
                   <img
                     src={produto.imagens[0].linkImagem}
                     useMap="#shape"
@@ -35,6 +35,7 @@ class App extends Component {
                   <div className="descricao-produto">
                     <h2>{produto.nome}</h2>
                     <h3>R$ {produto.preco},00</h3>
+                    <h3> {produto.produtoId}</h3>
                   </div>
                 </Link>
               </div>

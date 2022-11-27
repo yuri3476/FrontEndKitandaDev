@@ -1,8 +1,29 @@
-.login-title{
-    text-align: center;
-    background: #242424;
-    font-weight: bolder;
-    border-top: 3px solid yellow;
-    font-size: 30px;
-    padding: 10px;
+.login2 {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -37%);
+  padding: 80px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.login-title {
+  text-align: center;
+  background: #242424;
+  font-weight: bolder;
+  border-top: 3px solid yellow;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.login2 .cadastro {
+  padding-top: 25px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.login2 .cadastro a {
+  color: rgb(197, 162, 45);
 }

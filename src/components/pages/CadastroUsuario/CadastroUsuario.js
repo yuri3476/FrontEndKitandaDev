@@ -54,7 +54,7 @@ class App extends Component {
 
   criarDado = () => {
     const dados = {
-      nomeCliente: this.state.nome,
+      nomeCliente: this.state.nomeCliente,
       telefone: this.state.telefone,
       cpf: this.state.cpf,
       uf: this.state.uf,
@@ -68,6 +68,16 @@ class App extends Component {
       },
     };
 
+    console.log(dados.nomeCliente)
+    console.log(dados.telefone)
+    console.log(dados.cpf)
+    console.log(dados.uf)
+    console.log(dados.cidade)
+    console.log(dados.bairro)
+    console.log(dados.cep)
+    console.log(dados.referencia)
+    console.log(dados.usuario)
+
     const requestOptions = {
       method: "POST",
       headers: {
@@ -76,8 +86,7 @@ class App extends Component {
       body: JSON.stringify(dados),
     };
 
-    const url = "https://ikitandaapi.azurewebsites.net/api/Home/CriarUsuario'";
-
+    const url = "https://ikitandaapi.azurewebsites.net/api/Home/CriarUsuario";
     fetch(url, requestOptions)
       .then(alert("Usuario Cadastrado!!"))
       .catch((erro) => alert(erro));

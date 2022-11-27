@@ -146,6 +146,7 @@ class App extends Component {
                     onChange={this.txtImagem_change}
                     className="form-control name-pull-image"
                     type="url"
+                    required
                   ></input>
                 </div>
               </div>

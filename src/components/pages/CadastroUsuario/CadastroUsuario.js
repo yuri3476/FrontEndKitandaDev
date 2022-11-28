@@ -1,7 +1,17 @@
 import "./CadastroUsuario.css";
 import React, { Component } from "react";
 
+const checkCep = (e) => {
+  if (!e.target.value) return; 
+  const cep = e.target.value.replace(/\D/g, '');
+  fetch(`https://viacep.com.br/ws/${cep}/json/`)
+  .then(res => res.json()).then(data => {
+   console.log(data)
+  })
+}
+
 class App extends Component {
+
   state = {
     nomeCliente: "",
     telefone: "",
@@ -68,16 +78,6 @@ class App extends Component {
       },
     };
 
-    console.log(dados.nomeCliente)
-    console.log(dados.telefone)
-    console.log(dados.cpf)
-    console.log(dados.uf)
-    console.log(dados.cidade)
-    console.log(dados.bairro)
-    console.log(dados.cep)
-    console.log(dados.referencia)
-    console.log(dados.usuario)
-
     const requestOptions = {
       method: "POST",
       headers: {
@@ -90,9 +90,11 @@ class App extends Component {
     fetch(url, requestOptions)
       .then(alert("Usuario Cadastrado!!"))
       .catch((erro) => alert(erro));
-  };
 
+  };
+  
   render() {
+    const [text, setText] = React.useState('Teste');
     return (
       <div className="container-animation">
         <form className="login2">
@@ -190,10 +192,10 @@ class App extends Component {
           {/* Bairro */}
           <div className="input01">
             <input
-              type={"text"}
+              type="text" 
               className="loginInput"
               placeholder="Bairro"
-              onChange={this.txtBairro_change}
+              onChange={e => {e.txtBairro_change}}
               value={this.state.bairro}
             ></input>
           </div>
@@ -207,6 +209,7 @@ class App extends Component {
               placeholder="Cep"
               onChange={this.txtCep_change}
               value={this.state.cep}
+              onBlur={checkCep}
             ></input>
           </div>
           <br></br>
@@ -260,4 +263,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;

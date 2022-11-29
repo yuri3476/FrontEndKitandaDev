@@ -9,7 +9,7 @@ const LOGIN_URL = '/api/Home/Login';
 
 
 const Login = () => {
-  const {setAuth} = useContext(AuthContext);
+  const {auth, setAuth} = useContext(AuthContext);
   const userRef = useRef();
   const errRef = useRef();
 
@@ -35,10 +35,9 @@ const Login = () => {
           
         console.log(JSON.stringify(response.data));
         const token = response?.data.token;
-        const role = response?.data.role;
-        //const user = response?.data.userName;
+        const user = response?.data.user;
 
-        setAuth ({ userName, password, token, role });
+        setAuth ({ user, password, token });
         setuserName('');
         setPassword('');
         setSuccess(true);
@@ -55,7 +54,13 @@ const Login = () => {
         {success ? (
         <section>
           <div className="container-animation">
-            <h4>Logado {setAuth.user}</h4> 
+            <div class="login">
+              <h4>Autenticado com sucesso</h4> 
+              <div class="client" >
+              <h3>{auth.user?.userName}</h3>
+            </div>
+            </div>
+            
           </div>
           
         </section>

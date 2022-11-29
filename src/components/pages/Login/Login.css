@@ -3,6 +3,11 @@ body {
   font-family: arial, sans-serif;
 }
 
+.client {
+  padding-left: 40%;
+  color: rgba(255, 204, 42);
+}
+
 .login {
   background-color: rgba(0, 0, 0, 0.9);
   position: absolute;

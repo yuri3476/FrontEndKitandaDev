@@ -51,6 +51,37 @@ button:hover {
   box-shadow: rgb(197, 162, 45) 0px 1px 4px, rgb(197, 162, 45) 0px 0px 0px 3px;
 }
 
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+
 /*Animação de fundo*/
 .container-animation {
   height: 837px;

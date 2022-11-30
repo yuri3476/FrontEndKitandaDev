@@ -30,10 +30,13 @@ export default function Produto() {
 
             <div className="right">
               <div class="bloco">
-                <h4>KitandaDev</h4>
+                <h5>KitandaDev</h5>
                 <h2>{produto.nome}</h2>
                 <p>{produto.descricao}</p>
                 <h3>R$ {produto.preco},00</h3>
+                <div className="Quantidade">
+                  <h4>Quantidade: </h4> <p>{produto.quantidade} unidades</p>
+                </div>
               </div>
               <button>
                 <IoCartSharp size={25} />

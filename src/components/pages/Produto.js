@@ -9,7 +9,7 @@ export default function Produto() {
   const { nome } = useParams();
   useEffect(() => {
     const urlAPI =
-      "https://ikitandaapi.azurewebsites.net/api/Produto/ObterPorNome/" + nome;
+      "https://ikitandaapi.azurewebsites.net/api/Produto/ObterPorId/" + nome;
 
     axios.get(urlAPI).then((response) => setProdutos(response.data));
   }, []);

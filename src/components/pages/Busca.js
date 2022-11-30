@@ -20,7 +20,7 @@ export default function Busca() {
           {produtos.map((produto) => (
             <li key={produto.nome}>
               <div>
-                <Link to={`/Produto/${produto.nome}`} className="card">
+              <Link to={`/Produto/${produto.produtoId}`} className="card">
                   <img
                     src={produto.imagens[0].linkImagem}
                     useMap="#shape"

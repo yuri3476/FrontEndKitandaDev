@@ -3,6 +3,11 @@ body {
   font-family: arial, sans-serif;
 }
 
+.client {
+  padding-left: 40%;
+  color: rgba(255, 204, 42);
+}
+
 .login {
   background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
@@ -49,6 +54,37 @@ button:hover {
 }
 .loginInput:hover {
   box-shadow: rgb(197, 162, 45) 0px 1px 4px, rgb(197, 162, 45) 0px 0px 0px 3px;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
 }
 
 .login .cadastro {

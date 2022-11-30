@@ -16,7 +16,6 @@ export default function Produto() {
   console.log(produtos);
   return (
     <section className="container" id="grid-container">
-      <h1>{nome}</h1>
       <div className="catalogo">
         {produtos.map((produto) => (
           <div className="Container">
@@ -35,12 +34,18 @@ export default function Produto() {
                 <p>{produto.descricao}</p>
                 <h3>R$ {produto.preco},00</h3>
                 <div className="Quantidade">
-                  <h4>Quantidade: </h4> <p>{produto.quantidade} unidades</p>
+                  <h4>Quantidade: </h4>{" "}
+                  <select className="inputCompra" type={"text"}>
+                    <option selected>1</option>
+                    <option selected>2</option>
+                    <option selected>3</option>
+                    <option selected>4</option>
+                  </select>
                 </div>
               </div>
               <button>
                 <IoCartSharp size={25} />
-                <p>Adicionar ao Carrinho</p>
+                <p>Comprar produto</p>
               </button>
             </div>
           </div>

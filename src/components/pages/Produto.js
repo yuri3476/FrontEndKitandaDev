@@ -1,77 +1,48 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import axios from "axios";
+import { IoCartSharp } from "react-icons/io5";
+import "./Produto.css";
 
 export default function Produto() {
-  const [produto, setProduto] = useState({});
-  const { id } = useParams();
+  const [produtos, setProdutos] = useState([]);
+  const { nome } = useParams();
   useEffect(() => {
-    getProduto();
-    //   fetch(
-    //     `https://ikitandaapi.azurewebsites.net/api/Produto/ObterPorId/${id}`,
-    //     {
-    //       method: "GET",
-    //       headers: {
-    //         Accept: "application/json",
-    //         "Content-Type": "application/json",
-    //       },
-    //     }
-    //   ).then((response) => response.json().then((data) => setProduto(data)));
-    //   console.log(produto);
-    // const urlAPI =
-    //   "https://ikitandaapi.azurewebsites.net/api/Produto/ObterPorId/269e9ec1-6664-4962-a0f7-0c927309f061";
-    // axios
-    //   .get(urlAPI)
-    //   .then((response) => setProduto(response.data))
-    //   .catch((e) => console.log(e));
-  }, []);
+    const urlAPI =
+      "https://ikitandaapi.azurewebsites.net/api/Produto/ObterPorNome/" + nome;
 
-  async function getProduto() {
-    const produtoData = await axios.get(
-      `https://ikitandaapi.azurewebsites.net/api/Produto/ObterPorId/${id}`
-    );
-    setProduto(produtoData.data);
-    return console.log(produto);
-  }
+    axios.get(urlAPI).then((response) => setProdutos(response.data));
+  }, []);
+  console.log(produtos);
   return (
     <section className="container" id="grid-container">
-      <h1> {id}</h1>
-
-      {/* <div className="catalogo">
-        {produto.map((produto) => (
-          <li key={produto.nome}>
-            <div>
-              <div className="card">
-                <img
-                  src={produto.imagens[0].linkImagem}
-                  alt="imagem-produto"
-                  width="100%"
-                ></img>
-                <div className="descricao-produto">
-                  <h2>{produto.nome}</h2>
-                  <h3>R$ {produto.preco},00</h3>
-                </div>
-              </div>
+      <h1>{nome}</h1>
+      <div className="catalogo">
+        {produtos.map((produto) => (
+          <div className="Container">
+            <div className="left">
+              <img
+                src={produto.imagens[0].linkImagem}
+                alt="imagem-produto"
+                width="100%"
+              ></img>
             </div>
-          </li>
+
+            <div className="right">
+              <div class="bloco">
+                <h4>KitandaDev</h4>
+                <h2>{produto.nome}</h2>
+                <p>{produto.descricao}</p>
+                <h3>R$ {produto.preco},00</h3>
+              </div>
+              <button>
+                <IoCartSharp size={25} />
+                <p>Adicionar ao Carrinho</p>
+              </button>
+            </div>
+          </div>
         ))}
-      </div> */}
+      </div>
     </section>
   );
 }
-
-// import React from "react";
-// import { useParams } from "react-router-dom";
-
-// function Produto() {
-//   const { id } = useParams();
-
-//   return (
-//     <div>
-//       <h1>{id}</h1>
-//     </div>
-//   );
-// }
-
-// export default Produto;

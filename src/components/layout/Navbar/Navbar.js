@@ -6,7 +6,7 @@ import { VscAccount } from "react-icons/vsc";
 import { IoCartSharp } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
 
-function Navbar({search, setSearch}) {
+function Navbar({ search, setSearch }) {
   const navigate = useNavigate();
 
   function buscar() {
@@ -53,7 +53,6 @@ function Navbar({search, setSearch}) {
             <li>
               <Link to="/CadastrarProduto">Cadastrar Produto</Link>
             </li>
-       
           </ul>
         </nav>
       </div>

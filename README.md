@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 
 ## 🌐 API
-Você pode acessar a API através [desse link]([https://galatika-shop.herokuapp.com](https://ikitandaapi.azurewebsites.net/swagger/index.html)).
+Você pode acessar a API através [desse link](https://ikitandaapi.azurewebsites.net/swagger/index.html).
 
 
 ## Colaboradores

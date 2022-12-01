@@ -16,7 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Axios
 - Vercel
 
-<h2><a href='#'>Back-End</a></h2>
+<h2>Back-End</h2>
 
  - C#
  - Postgress

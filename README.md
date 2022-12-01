@@ -18,13 +18,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - ReactJs
 - Styled-Components
 - Axios
+- Vercel
 
 <h2><a href='https://github.com/Regulus01/BackEndKitandaDev'>Back-End</a></h2>
 
  - C#
- - Postgre
- - Azure
+ - Postgress
  - Heroku
+ - Azure
  
  <!-- ## 💻 Projeto -->
 ## 🚧 Projeto
@@ -40,12 +41,9 @@ Você pode acessar a API através [desse link]([https://galatika-shop.herokuapp.
 
 ## Colaboradores
 
-<img src="https://avatars.githubusercontent.com/u/83989931?v=4" alt="rails" width="200" height= "200" style="max-
-width:100%;">
-<img src="https://avatars.githubusercontent.com/u/112266976?v=4" alt="rails" width="200" height= "200" style="max-
-width:100%;">
-<img src="https://avatars.githubusercontent.com/u/70672431?v=4" alt="rails" width="200" height= "200" style="max-
-width:100%;">
+Front End made by [Yuri Rezende](https://github.com/limaluan), [Victor Barreto](https://github.com/KaioAntonio) and 
+
+
 
 [Yuri](https://github.com/yuri3476) [Victor](https://github.com/V1ct0rSb)
 

@@ -41,11 +41,12 @@ Você pode acessar a API através [desse link]([https://galatika-shop.herokuapp.
 
 ## Colaboradores
 
-Front End made by [Yuri Rezende](https://github.com/limaluan), [Victor Barreto](https://github.com/KaioAntonio) and 
+Front End made by [Yuri Rezende](https://github.com/yuri3476), [Victor Barreto](https://github.com/V1ct0rSb) and [Geovane Kelven](https://github.com/KelvenGeovane)
+
+Back End made by [José Cláudio](https://github.com/Regulus01) and [Leonardo Monte](https://github.com/LeoSTeles)
 
 
 
-[Yuri](https://github.com/yuri3476) [Victor](https://github.com/V1ct0rSb)
 
 
 

@@ -2,10 +2,6 @@
   <img alt="Singular Ofertas" title="Singular Ofertas" src="https://user-images.githubusercontent.com/83989931/205044669-0813d9b0-da3e-41c4-aa45-192e1d6702de.png" width="220px" />
 </h1>
 
-<p align="center">
-  <img alt="Singular Ofertas" src="https://user-images.githubusercontent.com/75454584/190867010-a0f1f352-d28d-4b61-b4e7-c25d598711cf.png" width="100%">
-</p>
-
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -20,7 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Axios
 - Vercel
 
-<h2><a href='https://github.com/Regulus01/BackEndKitandaDev'>Back-End</a></h2>
+<h2><a href='#'>Back-End</a></h2>
 
  - C#
  - Postgress

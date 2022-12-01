@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Styled-Components
 - Axios
 
-<h2><a href='https://github.com/Regulus01/BackEndKitandaDe'>Back-End</a></h2>
+<h2><a href='https://github.com/Regulus01/BackEndKitandaDev'>Back-End</a></h2>
 
  - C#
  - Postgre
@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 
 ## 🌐 API
-Você pode acessar a API através [desse link](https://galatika-shop.herokuapp.com).
+Você pode acessar a API através [desse link]([https://galatika-shop.herokuapp.com](https://ikitandaapi.azurewebsites.net/swagger/index.html)).
 
 
 ## Colaboradores

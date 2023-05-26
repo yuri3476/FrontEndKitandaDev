@@ -31,10 +31,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
  - Criação de Seções.
 
 
-## 🌐 API
-Você pode acessar a API através [desse link](https://ikitandaapi.azurewebsites.net/swagger/index.html).
-
-
 ## Colaboradores
 
 Front End made by [Yuri Rezende](https://github.com/yuri3476), [Victor Barreto](https://github.com/V1ct0rSb) and [Geovane Kelven](https://github.com/KelvenGeovane)
